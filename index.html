@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja gamaro</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <script src="./lib/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top" id="cabeçalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 fw-bold">Loja gamaro</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegaçao" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegaçao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#segurança" class="nav-link">
+                            Segurança
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#produtos" class="nav-link">
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            Fale Conosco
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-nos" class="nav-link">
+                            Sobre Nos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabeçalho" data-bs-smooth-scroll="true">
+        <section id="banner">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./img/banner/banner loja.png" alt="banner 1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./img/banner/banner desconto.png" alt="banner 2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./img/banner/banner celular.png" alt="banner 3" class="d-block w-100">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </section>
+        <section id="segurança" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row text-center">
+                    <h2 class="fw-bold">Compra 100% Segura</h2>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <h3 class="text-center mb-3">
+                            <i class="bi bi-shield-shaded fs-1 text-center d-block   mb-3"></i>
+                            Segurança</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita 
+                            facilis tenetur inventore magni sunt nisi voluptas natus architecto dolor esse, 
+                            repellendus repudiandae ut impedit veniam voluptatum voluptatibus recusandae itaque consequatur!
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="text-center mb-3">
+                            <i class="bi bi-rocket-takeoff-fill d-block mb-3 fs-1 "></i>
+                            Perfomance</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis 
+                                quidem mollitia alias unde, commodi corporis veniam, ab ratione laborum, 
+                                rem eaque! Dolorum dignissimos pariatur officiis animi deserunt iure voluptates debitis!
+                            </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="text-center">
+                            <i class="bi bi-chat-fill text-center d-block mb-3 fs-1 "></i>
+                            Suporte
+                        </h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eligendi 
+                            voluptatum! Ad praesentium pariatur numquam cupiditate, reiciendis reprehenderit ab 
+                            assumenda, dolorem doloremque natus nostrum adipisci, aliquid non ipsum minima tenetur?
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center  fw-bold">Produtos</h2>
+                </div>
+                <div class="row justify-content-center ">
+                    <div class="col-md-4 ">
+                        <nav class=" nav nav-pills justify-content-center  mt-5">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#celulares" class="nav-link fw-bold active">Celulares</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#smart-watch" class="nav-link fw-bold">Smart Watch</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sapatos" class="nav-link fw-bold">Sapatos</button>
+                        </nav>
+                    </div>
+                    <div class="col-md-10 mt-5">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="celulares">
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <img class="d-block w-100" src="./img/celulares/iphone_rosa.jpg" alt="iphone 15">
+                                        <h5 class=" fw-bold  ">Iphone 15</h5>
+                                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, accusamus aspernatur</p>
+                                        <button type="button" >Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <img class="d-block w-100" src="./img/celulares/iphone_azultitan.jpg" alt="iphone 14 Pro">
+                                        <h5 class="fw-bold ">Iphone 14 Pro</h5>
+                                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, accusamus aspernatur</p>
+                                        <button  type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <img class="d-block w-100" src="./img/celulares/SAMSUNG Galaxy S21 5G.jpg" alt="SAMSUNG">
+                                        <h5 class="fw-bold">Samsung Galaxy S21 5G</h5>
+                                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, accusamus aspernatur</p>
+                                        <button type="button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="smart-watch">
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <img class="d-block w-100" src="./img/smart watch/Relógio Smartwatch Digital.jpg" alt="smart-watch">
+                                        <h5 class="fw-bold">Smart-watch</h5>
+                                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, accusamus aspernatur</p>
+                                        <button  type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <img class="d-block w-100" src="./img/smart watch/Smart Watch - Silver.jpg" alt="smart-watch">
+                                        <h5 class="fw-bold">Smart-watch</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, accusamus aspernatur</p>
+                                        <button  type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <img class="d-block w-100" src="./img/smart watch/SmartWatch, bluetooth.jpg" alt="smart-watch">
+                                        <h5 class="fw-bold">Smart-watch</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, accusamus aspernatur</p>
+                                        <button  type="button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sapatos">
+                                <div class="row">
+                                    <div class="col-md-4 text-center">
+                                        <img class="d-block w-100" src="./img/sapatos/Homens Calçados de skatistas.jpg" alt="tenis">
+                                        <h5 class="fw-bold mt-3">Tenis</h5>
+                                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, accusamus aspernatur</p>
+                                        <button type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <img class="d-block w-100" src="./img/sapatos/Homens Tênis de corrida.jpg" alt="tenis">
+                                        <h5 class="fw-bold mt-3">Tenis</h5>
+                                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, accusamus aspernatur</p>
+                                        <button type="button">Comprar</button>
+                                    </div>
+                                    <div class="col-md-4 text-center">
+                                        <img class="d-block w-100" src="./img/sapatos/Lace-up Front Running Shoes.jpg" alt="tenis">
+                                        <h5 class="fw-bold mt-3">Tenis</h5>
+                                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, accusamus aspernatur</p>
+                                        <button type="button">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section id="sobre-nos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img class="d-block w-100" src="./img/banner/gamaro.png" alt="">
+                    </div>
+                    <div class="col-md-7 mt-3 mt-md-0">
+                        <h2 class="fw-bold">Sobre Nos</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Dolorum eum, exercitationem in ea vitae qui praesentium dolorem 
+                            velit quaerat impedit facere ullam, neque modi, fugiat recusandae deleniti minus ex laborum.
+                        </p>
+                        <h3 class="fw-bold">Segurança</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate atque 
+                            consectetur similique sint enim eos temporibus obcaecati ad aspernatur? Velit officiis 
+                            consequatur, id obcaecati corporis cupiditate voluptates sapiente adipisci sunt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 pb-5" id="fale-conosco">
+            <div class="container">
+                <div class="row">
+                    <h2 class=" text-center fw-bold">Fale conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu Nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu Email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu Telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu Mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook  text-colored" ></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço</h3>
+                            <p>
+                                Rua Teste Exemplo nº 145, Bairro Bootstrap - Picos - PI
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
